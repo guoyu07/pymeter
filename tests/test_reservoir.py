@@ -1,5 +1,5 @@
 from pymeter.reservoir import ExponentiallyDecayingReservoir
-from tests.util import ManualClock
+from .util import ManualClock
 
 __author__ = 'binhle'
 

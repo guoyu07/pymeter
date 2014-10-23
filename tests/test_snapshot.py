@@ -97,4 +97,3 @@ def test_empty_snapshot():
 def test_std_dev_of_singleton_snapshot_is_zero():
     single_item_snapshot = WeightedSnapshot([WeightedSample(1, 1)])
     assert single_item_snapshot.std_dev == 0
-

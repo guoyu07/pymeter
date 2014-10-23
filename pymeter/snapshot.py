@@ -106,4 +106,3 @@ class WeightedSnapshot(Snapshot):
         diffs = (value - mean for value in self.values)
         variance = sum(diff * diff * weight for diff, weight in zip(diffs, self.norm_weights))
         return math.sqrt(variance)
-

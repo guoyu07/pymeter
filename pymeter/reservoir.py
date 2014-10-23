@@ -2,7 +2,7 @@ import time
 import random
 import math
 
-from pymeter.snapshot import WeightedSample, WeightedSnapshot
+from .snapshot import WeightedSample, WeightedSnapshot
 
 
 __author__ = 'binhle'
@@ -62,4 +62,3 @@ class ExponentiallyDecayingReservoir(object):
 
     def _weight(self, t):
         return math.exp(self.alpha * t)
-
