@@ -83,8 +83,7 @@ class WeightedSnapshot(Snapshot):
 
         return self.values[pos]
 
-    @property
-    def size(self):
+    def __len__(self):
         return len(self.values)
 
     @property

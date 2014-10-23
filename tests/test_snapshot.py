@@ -66,8 +66,8 @@ def test_values():
     assert set(snapshot.values) == {1, 2, 3, 4, 5}
 
 
-def test_size():
-    assert snapshot.size == 5
+def test_len():
+    assert len(snapshot) == 5
 
 
 def test_min():
