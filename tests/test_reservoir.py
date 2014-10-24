@@ -1,8 +1,6 @@
 from pymeter.reservoir import ExponentiallyDecayingReservoir
 from .util import ManualClock
 
-__author__ = 'binhle'
-
 
 def assert_all_values_between(reservoir, min_value, max_value):
     for value in reservoir.snapshot().values:

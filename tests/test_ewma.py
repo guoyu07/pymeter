@@ -1,8 +1,6 @@
 from pymeter.ewma import EWMA
 from util import close_enough
 
-__author__ = 'binhle'
-
 
 def elapse_one_minute(ewma):
     for i in xrange(12):

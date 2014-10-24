@@ -4,9 +4,6 @@ from pymeter.snapshot import WeightedSample, WeightedSnapshot
 from util import close_enough
 
 
-__author__ = 'binhle'
-
-
 def weighted_array(values, weights):
     return (WeightedSample(v, w) for v, w in zip(values, weights))
 

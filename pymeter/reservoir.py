@@ -5,9 +5,6 @@ import math
 from .snapshot import WeightedSample, WeightedSnapshot
 
 
-__author__ = 'binhle'
-
-
 class ExponentiallyDecayingReservoir(object):
     rescale_threshold = 3600
 

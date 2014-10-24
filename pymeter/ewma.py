@@ -1,7 +1,6 @@
 from __future__ import division
 import math
 
-__author__ = 'binhle'
 
 INTERVAL = 5
 M1_ALPHA = 1 - math.exp(-INTERVAL / 60 / 1)

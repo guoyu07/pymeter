@@ -1,15 +1,13 @@
 from __future__ import division
 
-__author__ = 'binhle'
 
-
-def close_enough(actual, expected, offset=0.1):
+def close_enough(actual, expected, offset=0.001):
     return abs(actual - expected) <= offset
 
 
 class ManualClock(object):
     def __init__(self):
-        self._time = 0
+        self._time = 0.0
 
     def add_millis(self, millis):
         self._time += millis / 1000

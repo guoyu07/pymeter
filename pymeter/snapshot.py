@@ -5,9 +5,6 @@ import math
 import abc
 
 
-__author__ = 'binhle'
-
-
 class Snapshot(object):
     __metaclass__ = abc.ABCMeta
 
