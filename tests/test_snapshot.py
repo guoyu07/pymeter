@@ -1,7 +1,7 @@
 from nose.tools import raises
 
 from pymeter.snapshot import WeightedSample, WeightedSnapshot
-from .util import close_enough
+from util import close_enough
 
 
 __author__ = 'binhle'
