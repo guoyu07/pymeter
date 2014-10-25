@@ -79,14 +79,17 @@ class Meter(object):
         return self._m15_rate.rate
 
 
-def metered(func):
-    meter = Meter()
+def metered(clock=time):
+    def decorator(func):
+        meter = Meter(clock=clock)
 
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        meter.mark()
-        return func(*args, **kwargs)
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            meter.mark()
+            return func(*args, **kwargs)
 
-    wrapper.meter = meter
-    return wrapper
+        wrapper.meter = meter
+        return wrapper
+
+    return decorator
 
